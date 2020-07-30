@@ -33,7 +33,7 @@ function actList() {
   let descriptions = [
     `Conway's Game of Life`,
     `flow in direction`,
-    `Langston's Ant`,
+    `Langton's Ant`,
   ]
   return state.actions
     .map((name, i) => {
