@@ -1,4 +1,4 @@
-# Bit
+# Automadraw
 
 <img 
   src='https://raw.githubusercontent.com/constraint-systems/automadraw/master/automadraw.gif'
