@@ -27,7 +27,7 @@ function arrows() {
     .join('')
 }
 function linkButton(value) {
-  return `<button class="link">${value}</button>`
+  return `<button class="link" onclick="autoTrigger('${value}')">${value}</button>`
 }
 function actList() {
   let descriptions = [

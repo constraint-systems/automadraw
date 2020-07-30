@@ -11,6 +11,7 @@ import {
   flipVertical,
   flow,
   nextAction,
+  selectAction,
   loadImage,
   setHelp,
   travelHistory,
@@ -325,4 +326,9 @@ export function buttonTrigger(key) {
   setTimeout(() => {
     km[key] = false
   }, 200)
+}
+export function autoTrigger(name) {
+  selectAction(name)
+  render()
+  renderHelp()
 }

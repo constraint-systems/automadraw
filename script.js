@@ -9,7 +9,12 @@ import {
 } from '/modules/actions.js'
 import { addMarker } from '/modules/utils.js'
 import { renderHelp } from '/modules/help.js'
-import { downHandler, upHandler, buttonTrigger } from '/modules/keyboard.js'
+import {
+  downHandler,
+  upHandler,
+  buttonTrigger,
+  autoTrigger,
+} from '/modules/keyboard.js'
 import state from '/modules/state.js'
 import { render, setLayerSizes } from '/modules/render.js'
 
@@ -1256,6 +1261,7 @@ window.addEventListener('load', () => {
     window.addEventListener('keyup', upHandler)
     // button trigger available for onclick events from help
     window.buttonTrigger = buttonTrigger
+    window.autoTrigger = autoTrigger
   }
   init()
 })

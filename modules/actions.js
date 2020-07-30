@@ -455,6 +455,15 @@ export function nextAction() {
     initAnt()
   }
 }
+export function selectAction(name) {
+  let actions = state.actions
+  let index = actions.indexOf(name)
+  let select_action = actions[index]
+  state.act = select_action
+  if (select_action === 'ant') {
+    initAnt()
+  }
+}
 export function initAnt() {
   let x = Math.floor(div(sub(state.auto_cursor[2], 1), 2))
   let y = Math.floor(div(sub(state.auto_cursor[3], 1), 2))
