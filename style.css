@@ -11,7 +11,7 @@ body {
   user-select: none;
   font-weight: bold;
   -webkit-text-size-adjust: none;
-  background: #ccc;
+  background: #ddd;
   color: #222;
 }
 body {
@@ -48,7 +48,7 @@ a {
   height: 100vh;
   overflow-y: auto;
   /* background: rgba(204, 204, 204, 0.98); */
-  background: #ccc;
+  background: #ddd;
   border-left: solid 1px #222;
 }
 
