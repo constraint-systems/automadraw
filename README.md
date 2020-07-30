@@ -1,11 +1,11 @@
 # Bit
 
 <img 
-  src='https://raw.githubusercontent.com/constraint-systems/bit/master/bit.gif'
+  src='https://raw.githubusercontent.com/constraint-systems/automadraw/master/automadraw.gif'
   width="600"
   />
   
   
-Bit is a grid-based, keyboard-driven pixel drawing tool. It is focused on maintaining flow as you draw and resize.
+Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.
   
-https://bit.constraint.systems
+https://automadraw.constraint.systems
