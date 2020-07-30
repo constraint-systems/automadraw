@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta
+      name="viewport"
+      content="width=device-width; initial-scale=1; shrink-to-fit=no;"
+    />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <title>Automadraw</title>
+    <meta name="og:title" content="Automadraw" />
+    <meta name="description" content="Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors." />
+    <meta name="og:description" content="Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors." />
+    <meta property="og:image" content="https://automadraw.constraint.systems/automadraw.png">
+    <meta name="og:url" content="https://automadraw.constraint.systems" />
+    <meta name="twitter:card" content="summary_large_image" />
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module"></script>
+</head>
+<body>
+  <input type="file" id="file_input" style="display: none;" />
+  <div id="workspace" style="display: flex;">
+    <div>
+      <div class="hspacer"></div>
+      <div style="padding-left: 16px; padding-right: 16px;">
+        <div style="display: flex; justify-content: space-between;">
+          <div style="margin-right: 1ch;">
+            <button class="mode_button">1 draw</button>
+            <button class="mode_button">2 act</button>
+            <button class="mode_button">3 resize canvas</button>
+          </div>
+          <div>
+            <button>o</button> load image&nbsp;
+            <button>p</button> save as png
+          </div>
+        </div>
+      </div>
+      <div style="padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px; position: relative;">
+        <div style="position: absolute; left: 16px; top: 8px; right: 16px; bottom: 8px; background: #bfbfbf;"></div>
+        <canvas id="render"></canvas>
+      </div>
+      <div style="padding-left: 16px; padding-right: 16px;">
+        <div style="display: flex; justify-content: space-between;">
+          <div style="display: flex;">
+            <div id="draw_cursor_read" style="padding-right: 0.5ch; margin-right: 1ch;">0,0:1,1</div>
+            <div id="auto_cursor_read" style="padding-right: 0.5ch;">0,0:1,1</div>
+          </div>
+          <div id="canvas_read" style="padding-left: 0.5ch; padding-right: 0.5ch;">0,0:1,1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="help">
+    <div class="hspacer"></div>
+    <div>Automadraw</div>
+    <div class="hspacer"></div>
+    <div>Draw and evolve your drawing using cellular automata on a pixel grid with two keyboard-controlled cursors.</div>
+    <div id="help_content">
+    </div>
+  </div>
+</body>
+</html>
+

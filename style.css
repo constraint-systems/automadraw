@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13.333px;
+  line-height: 16px;
+  user-select: none;
+  font-weight: bold;
+  -webkit-text-size-adjust: none;
+  background: #ccc;
+  color: #222;
+}
+body {
+  min-height: 100vh;
+}
+body {
+  min-width: 30ch;
+}
+img,
+canvas {
+  display: block;
+  position: relative;
+}
+a {
+  color: inherit;
+}
+
+#container {
+  margin: 0 auto;
+  display: flex;
+}
+
+#workspace {
+  padding-right: 40ch;
+}
+#help {
+  position: fixed;
+  right: 0;
+  width: 38ch;
+  /* border-left: solid 1px #222; */
+  padding-right: 2ch;
+  padding-left: 2ch;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  /* background: rgba(204, 204, 204, 0.98); */
+  background: #ccc;
+  border-left: solid 1px #222;
+}
+
+button {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
+  border: none;
+  background: transparent;
+  line-height: 14px;
+  border: solid 1px #222;
+}
+button.link {
+  padding: 0;
+  border: none;
+  text-decoration: underline;
+}
+button + button {
+  margin-left: -1px;
+}
+button.active,
+.active button {
+  background: #222;
+  color: #eee;
+  text-decoration: none;
+}
+.mode_controls {
+  display: none;
+}
+.mode_controls.active {
+  display: block;
+}
+
+/* Spacers */
+.spacer,
+.hspacer,
+.qspacer {
+  width: 100%;
+}
+.spacer {
+  height: 16px;
+}
+.hspacer {
+  height: 8px;
+}
+.qspacer {
+  height: 4px;
+}
