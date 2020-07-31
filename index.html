@@ -26,13 +26,13 @@
       <div style="padding-left: 16px; padding-right: 16px;">
         <div style="display: flex; justify-content: space-between;">
           <div style="margin-right: 1ch;">
-            <button class="mode_button">1 draw</button>
-            <button class="mode_button">2 act</button>
-            <button class="mode_button">3 resize canvas</button>
+            <button class="mode_button" onclick="buttonTrigger('1')">1 draw</button>
+            <button class="mode_button" onclick="buttonTrigger('2')">2 act</button>
+            <button class="mode_button" onclick="buttonTrigger('3')">3 resize canvas</button>
           </div>
           <div>
-            <button>o</button> load image&nbsp;
-            <button>p</button> save as png
+            <button onclick="buttonTrigger('o')">o</button> load image&nbsp;
+            <button onclick="buttonTrigger('p')">p</button> save as png
           </div>
         </div>
       </div>
