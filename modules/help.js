@@ -131,6 +131,16 @@ function setSpecial() {
   return html
 }
 
+function setEndLinks() {
+  let html = ''
+  html += spacer
+  html += `<a href="https://github.com/constraint-systems/automadraw" target="_blank">View source</a>`
+  html += qspacer
+  html += `<a href="https://constraint.systems" target="_blank">Constraint Systems</a>`
+  html += spacer
+  return html
+}
+
 export function renderHelp() {
   let $content = state.dom.$help_content
   let html = ''
@@ -191,6 +201,7 @@ export function renderHelp() {
       html += l('→', b('d'))
     }
   }
+  html += setEndLinks()
 
   $content.innerHTML = html
 }
