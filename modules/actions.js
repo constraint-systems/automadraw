@@ -153,14 +153,17 @@ export function changeCanvas(dm) {
 }
 
 export function setHelp() {
+  let winwidth = window.innerWidth
   let px = state.px
   let w = mul(add(state.cols, 2), px)
   if (state.show_help) {
-    let p = mul(40, 8)
-    w += p
+    if (winwidth > 640) {
+      let p = mul(40, 8)
+      w += p
+      state.dom.$workspace.style.paddingRight = p + 'px'
+      state.dom.$workspace.style.width = w + 'px'
+    }
     state.dom.$help.style.display = 'block'
-    state.dom.$workspace.style.paddingRight = p + 'px'
-    state.dom.$workspace.style.width = w + 'px'
   } else {
     state.dom.$help.style.display = 'none'
     state.dom.$workspace.style.paddingRight = 0
