@@ -13,7 +13,7 @@ export default {
   crop_cache_art: null,
   crop_cache_dims: null,
   crop_cache_resize: null,
-  draw_cursor: [4, 4, 1, 1],
+  draw_cursor: [4, 4, 2, 2],
   auto_cursor: [0, 0, 30, 20],
   flow_choice: 'south',
   ant_position: [0, 0],
