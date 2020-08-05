@@ -134,6 +134,8 @@ function setSpecial() {
 function setEndLinks() {
   let html = ''
   html += spacer
+  html += `<a href="https://www.youtube.com/watch?v=fFE5KO_9-Ws" target="_blank">Video walkthrough</a>`
+  html += qspacer
   html += `<a href="https://writing.grantcuster.com/posts/2020-07-30-automadraw/" target="_blank">Release notes</a>`
   html += qspacer
   html += `<a href="https://github.com/constraint-systems/automadraw" target="_blank">View source</a>`
